@@ -1,0 +1,28 @@
+$green: #4A773C;
+$green-dark: #224418;
+$light-green: #cdd9c9;
+
+$grey: #cdd9c9;
+
+$primary: $green;
+$secondary: #6e8a65;
+$success: $green;
+$danger: #C70606;
+$warning: #FF8A00;
+//$info: $blue;
+//$light: $grey;
+//$dark: $grey-500;
+//$success-text: #fff;
+  
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  //info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light-green,
+  dark: $green-dark,
+  // add any additional color below
+);

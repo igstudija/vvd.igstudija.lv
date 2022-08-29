@@ -1,0 +1,41 @@
+{
+
+    "tabledef": 
+            {
+                "language": "lv",
+                "lengthChange": "false", 
+                "pageLength":"10",
+                "autoWidth": "false"
+            },
+
+    "columns": [
+         {
+            "title": "Pamatjoma", 
+            "slug": "pamatjoma",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        {
+            "title": "Apakšjoma", 
+            "slug": "apaksjoma",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        
+        {
+            "title": null, 
+            "slug": "darbibas",
+            "columnDefs": 
+                    {
+                        "className": "text-end",
+                        "width": "100px",
+                        "defaultContent": "<button class='btn btn-sm btn-danger'><i class='fa-solid fa-trash-can'></i></button>",
+                        "orderable": false
+                    }
+        }
+    ]
+}

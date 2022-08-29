@@ -1,0 +1,41 @@
+html {
+   margin:0;
+   padding: 0;
+   background:#CDD9C9; 
+}
+
+body {
+    padding-left: 265px; 
+    background: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    font-size:14px;
+    font-family: $font;
+    height: 100%;
+    
+    &.menu-collapsed  {
+         padding-left: 90px; 
+    }
+}
+
+
+.header {
+    background: #fff;
+     border-radius: 10px;
+     padding: 7px 15px;
+     margin-bottom: 10px;
+     
+     h1 {
+         font-size: 16px;
+         text-transform: uppercase;
+         margin: 0;
+     }
+}
+
+.template-switch {
+    position: fixed;
+    z-index: 9999;
+    bottom:15px;
+    right:15px;
+}

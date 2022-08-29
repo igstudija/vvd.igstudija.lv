@@ -1,0 +1,36 @@
+{
+    "data": [
+        {                  
+            "npk": 1,
+            "raditajs": "Kaut kāds rādītāja nosaukums ļoti garš un sarežģīts, ka ne izlasīt, ne atcerēties",
+            "vertiba": "ja", 
+            "piezimes": "Pilnīgi noteikti viss ir ok",
+            "id":11,
+            "darbibas":"<button class='btn btn-outline-success'><i class='fa-solid fa-image'></i></button>"
+        },
+        {                  
+            "npk": 2,
+            "raditajs": "Kaut kāds rādītāja nevisai garš nosaukums",
+            "piezimes": "Pilnīgi noteikti viss ir ok",
+            "vertiba": "ne",
+            "id":12,
+            "darbibas":"<button class='btn btn-success'><i class='fa-solid fa-image'></i></button>"
+        },
+        {                  
+            "npk": 3,
+            "raditajs": "Kaut kāds rādītāja nosaukums mazliet atširīgs",
+            "vertiba": null, 
+            "piezimes": null ,
+            "id":10  ,
+            "darbibas":"<button class='btn btn-success'><i class='fa-solid fa-image'></i></button>"
+        },
+        {                  
+            "npk": 4,
+            "raditajs": "Kaut kāds nosaukums",
+            "vertiba": "na", 
+            "piezimes": "nav attiecināms" ,
+            "id":14  ,
+            "darbibas":"<button class='btn btn-outline-success'><i class='fa-solid fa-image'></i></button>"
+        }
+    ]
+}

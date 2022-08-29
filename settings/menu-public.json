@@ -1,0 +1,11 @@
+{
+     "menuitem": [
+      {"name": "Iesniegumi", "link": "#", "icon":"fa-solid fa-file-signature", "order":"01"},
+      {"name": "Atļaujas", "link": "#", "icon":"fa-solid fa-award", "order":"01"},
+      {"name": "Pārskati", "link": "#", "icon":"fa-solid fa-list-check", "order":"01"},
+      {"name": "Licences", "link": "#", "icon":"fa-solid fa-file-invoice", "order":"01"},
+      {"name": "Izziņas", "link": "#", "icon":"fa-solid fa-file-lines", "order":"01"},
+      {"name": "Maksājumi", "link": "#", "icon":"fa-solid fa-euro-sign", "order":"01"},
+      {"name": "Dokumenti", "link": "#", "icon":"fa-solid fa-folder-open", "order":"01"}
+    ]
+}

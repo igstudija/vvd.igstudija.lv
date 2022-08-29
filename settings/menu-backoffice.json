@@ -1,0 +1,22 @@
+{
+     "menuitem": [
+      {"name": "Iesniegumi", "link": "#", "icon":"fa-solid fa-file-signature", "order":"01"},
+     {"name": "Atļaujas", "link": "#", "icon":"fa-solid fa-award", "order":"01"},
+      {"name": "Reģistri", "link": "#", "icon":"fa-solid fa-table-list", "order":"01"},
+     {"name": "Pārskati", "link": "#", "icon":"fa-solid fa-list-check", "order":"01"},
+      {"name": "Licences", "link": "#", "icon":"fa-solid fa-file-invoice", "order":"01"},
+      {"name": "Klasifikatori", "link": "#", "icon":"fa-solid fa-table-cells", "order":"01"},
+      {"name": "Kontrole", "link": "#", "icon":"fa-solid fa-check-to-slot", "order":"01"},
+      {"name": "Klienti", "link": "#", "icon":"fa-solid fa-user-group", "order":"01"},
+       {"name": "Maksājumi", "link": "#", "icon":"fa-solid fa-euro-sign", "order":"01"},
+       {"name": "Dokumenti", "link": "#", "icon":"fa-solid fa-folder-open", "order":"01"},
+      {"name": "Atskaites", "link": "#", "icon":"fa-solid fa-file-circle-check", "order":"01"},
+      {"name": "Uzstādījumi", "link": "#", "icon":"fa-solid fa-gear", "order":"01"}
+    ]
+}
+
+
+
+
+     
+     

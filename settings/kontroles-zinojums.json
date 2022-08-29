@@ -1,0 +1,273 @@
+{
+
+    "form_field": [
+        {
+            "type": "text", 
+            "col": "col-md-2",
+            "field_elements": 
+                    {
+                        "label": "ID",
+                        "value":"123"
+                    }
+          
+        },
+        {
+            "type": "text", 
+            "col": "col-md-6",
+            "field_elements": 
+                    {
+                        "label": "Pārbaudes veids", 
+                        "placeholder": "Izvēlies"
+                    }
+            ,
+            "options": {
+                "a": "Pirma", 
+                "b": "Otra"
+            }
+        },
+
+        {
+            "type": "select", 
+            "col": "col-md-4",
+            "field_elements": 
+                    {
+                        "label": "Statuss", 
+                        "placeholder": "Izvēlies"
+                    }
+            ,
+            "options": 
+                    {
+                        "a": "Uzsākts", 
+                        "b": "Pabeigts"
+                    }
+        },
+        {
+            "type": "text", 
+            "col": "col-md-5",
+            "field_elements": 
+                    {
+                        "label": "VVD inspektors", 
+                        "placeholder": ""
+                    }
+        
+        },
+        {
+            "type": "text", 
+            "col": "col-md-7",
+            "field_elements": 
+                    {
+                        "label": "Struktūrvienība", 
+                        "placeholder": ""
+                    }
+          
+        },
+        {
+            "type": "subtitle", 
+            "col": "col-12",
+            "field_elements": 
+                    {
+                        "heading": "h3",
+                        "title": "Operators"
+                    }
+        },
+        {
+            "type": "text", 
+            "col": "col-md-6",
+            "field_elements": 
+                    {
+                        "label": "Nosaukums"
+                    }
+          
+        },
+        {
+            "type": "text", 
+            "col": "col-md-6",
+            "field_elements": 
+                    {
+                        "label": "Pamatdarbības veids"
+                    }
+          
+        },
+        {
+            "type": "text", 
+            "col": "col-md-4",
+            "field_elements": 
+                    {
+                        "label": "Pārbaudes objekts"
+                    }
+          
+        },
+        {
+            "type": "text", 
+            "col": "col-md-8",
+            "field_elements": 
+                    {
+                        "label": "Objekta adrese"
+                    }
+          
+        },
+        {
+            "type": "text", 
+            "col": "col-md-3",
+            "field_elements": 
+                    {
+                        "label": "Atļaujas tips"
+                    }
+          
+        },
+        {
+            "type": "text", 
+            "col": "col-md-5",
+            "field_elements": 
+                    {
+                        "label": "Atļauja"
+                    }
+          
+        },
+        {
+            "type": "date", 
+            "col": "col-md-2",
+            "field_elements": 
+                    {
+                        "label": "Atļauja izdota"
+                    }
+          
+        },
+         {
+            "type": "date", 
+            "col": "col-md-2",
+            "field_elements": 
+                    {
+                        "label": "Atļauja derīga"
+                    }
+          
+        },
+       {
+            "type": "subtitle", 
+            "col": "col-12",
+            "field_elements": 
+                    {
+                        "heading": "h4",
+                        "title": "Operatora pārstāvji"
+                    }
+        },
+        {
+            "type": "text", 
+            "col": "col-md-3",
+            "field_elements": 
+                    {
+                        "label": "Pārstāvis"
+                    }
+          
+        },
+        {
+            "type": "text", 
+            "col": "col-md-3",
+            "field_elements": 
+                    {
+                        "label": "Pārstāvja amats"
+                    }
+          
+        },
+        {
+            "type": "text", 
+            "col": "col-md-3",
+            "field_elements": 
+                    {
+                        "label": "Atbildīgā persona"
+                    }
+          
+        },
+        {
+            "type": "text", 
+            "col": "col-md-3",
+            "field_elements": 
+                    {
+                        "label": "Atbildīgās personas amats"
+                    }
+          
+        },
+        {
+            "type": "subtitle", 
+            "col": "col-12",
+            "field_elements": 
+                    {
+                        "heading": "h3",
+                        "title": "Piezīmes"
+                    }
+        },
+        {
+            "type": "textarea", 
+            "col": "col-md-12",
+            "field_elements": 
+                    {
+                        "label": "Piezīmes"
+                    }
+          
+        }
+
+
+
+    ],
+
+    "accordion": [
+        {
+            "title": "Kontroles modulis",
+            "section": "kontrole-kontroles-modulis",
+            "collapsed": "",
+            "show": "show",
+            "order": "01"
+        },
+        {
+            "title": "Pārbaudes veicēji",
+            "section": "kontrole-parbaudes-veiceji",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Pārbaudē piedalījās",
+            "section": "kontrole-parbaude-piedalijas",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Pārbaudes jomas",
+            "section": "kontrole-parbaudes-jomas",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Dokumenti",
+            "section": "kontrole-dokumenti",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Tehniskie līdzekļi",
+            "section": "kontrole-tehniskie-lidzekli",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Versijas",
+            "section": "kontrole-versijas",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Ziņojuma aprites vēsture",
+            "section": "kontrole-zinojuma-aprites-vesture",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        }
+
+    ]
+}
+

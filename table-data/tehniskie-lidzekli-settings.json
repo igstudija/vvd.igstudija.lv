@@ -1,0 +1,43 @@
+{
+
+    "tabledef": 
+            {
+                "language": "lv",
+                "lengthChange": "false", 
+                "pageLength":"10",
+                "autoWidth": "false"
+            },
+
+    "columns": [
+         {
+            "title": "Tehniskie līdzekļi", 
+            "slug": "tehniskie-lidzekli",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        
+        {
+            "title": "Papildinformācija (modelis u.c.)", 
+            "slug": "papildinformacija",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+      
+       
+        {
+            "title": null, 
+            "slug": "darbibas",
+            "columnDefs": 
+                    {
+                        "className": "text-end",
+                        "width": "100px",
+                        "defaultContent": "<button class='btn btn-sm btn-danger'><i class='fa-solid fa-trash-can'></i></button>",
+                        "orderable": false
+                    }
+        }
+    ]
+}

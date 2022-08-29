@@ -1,0 +1,16 @@
+{
+    "data": [
+        {                  
+            "vards": "Jānis",
+            "uzvards":"Bērziņš",
+            "amats": "Vecākais inspektors" ,
+             "organizacija": "SIA Eko osta"    
+        },
+        {                  
+            "vards": "Anna ",
+            "uzvards":"Kalna",
+            "amats": "Vecākais inspektors" ,
+             "organizacija": "SIA Getliņi"    
+        }
+    ]
+}

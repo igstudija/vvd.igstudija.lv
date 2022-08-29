@@ -1,0 +1,169 @@
+{
+
+    "form_field": [
+        {
+            "type": "text", 
+            "col": "col-md-3",
+            "field_elements": 
+                    {
+                        "label": "C#ID",
+                        "value": "123",
+                        "disabled": "disabled"
+                    }
+        }
+
+
+    ],
+
+    "accordion": [
+        {
+            "title": "Darbības veids",
+            "section": "darbibas-veids",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Zemes vienības / būves / telpu grupas kadastra apzīmējums",
+            "section": "zemes-vienobas",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Piesārņojošo darbību veids",
+            "section": "piesarnojoso-darbibu-veids",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Informācija par degvielas uzpildes staciju",
+            "section": "informacija-par-degvielas-uzpildes-staciju",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Transportlīdzekļu remontdarbnīcas un/vai automazgātuves",
+            "section": "transportlidzeklu-remontdarbnicas",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Ķīmisko vielu apsaimniekošana",
+            "section": "kinisko-vielu-apsaimniekosana",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Dzīvnieku audzētavas/novietnes",
+            "section": "dzivnieku-audzetavas",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Dzīvnieku veidi un to skaits",
+            "section": "dzivnieku-veidi",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Dzīvnieku turēšanas veids",
+            "section": "dzivnieku-turesanas-veids",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Kūtsmēslu uzglabāšana",
+            "section": "kutsmeslu-uzglabasana",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Informācija par ūdens apgādi un notekūdeņiem",
+            "section": "info-par-udeni",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Informācija par notekūdeņu attīrīšanas iekārtām",
+            "section": "info-par-udens-attirisanu",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Tiešā notekūdeņu un lietusūdeņu izplūde ūdensobjektos",
+            "section": "notekudeni",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Dūmeņi (avoti)",
+            "section": "dumeni",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Sadedzināšanas iekārtas",
+            "section": "sadedzinasanas-iekartas",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Emisiju limitu projekts",
+            "section": "emisiju-limitu-projekts",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Dokumenti",
+            "section": "dokumenti",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Eksperta vērtējums / sarakste ar iesnieguma iesniedzēju",
+            "section": "eksperta-vertejums",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Iekšējie komentāri",
+            "section": "ieksejie-komentari",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Klientiem komunikācija",
+            "section": "klientiem-komunikacija",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Statusu izmaiņu vēsture",
+            "section": "statusu-izmainu-vesture",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        }
+
+    ]
+}
+

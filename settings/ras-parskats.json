@@ -1,0 +1,100 @@
+{
+
+    "form_field": [
+        {
+            "type": "text", 
+            "col": "col-md-3",
+            "field_elements": 
+                    {
+                        "label": "DRN VKP #ID",
+                        "value": "123",
+                        "disabled": "disabled"
+                    }
+        }
+
+
+
+    ],
+
+    "accordion": [
+        {
+            "title": "DNR",
+            "section": "dnr",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Dati-S",
+            "section": "datis",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Dati-R",
+            "section": "datir",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Annex",
+            "section": "annex",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Komunikācija",
+            "section": "komunikacija",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Atkārtoti lietots",
+            "section": "atkkartoti-lietots",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Finanšu plāna izpilde",
+            "section": "finansu-plana-izpilde",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Papildinformācija",
+            "section": "papildinformacija",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Kopsavilkums",
+            "section": "kopsavilkums",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Auditora atzinums",
+            "section": "auditora-atzinums",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
+            "title": "Kopējais eksperta novērtējums",
+            "section": "kopejais-eksperta-novertejums",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        }
+
+    ]
+}
+

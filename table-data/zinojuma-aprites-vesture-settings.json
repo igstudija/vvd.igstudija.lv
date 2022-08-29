@@ -1,0 +1,70 @@
+{
+
+    "tabledef": 
+            {
+                "language": "lv",
+                "lengthChange": "false", 
+                "pageLength":"10",
+                "autoWidth": "false"
+            },
+
+    "columns": [
+         {
+            "title": "Vadītājs", 
+            "slug": "vaditajs",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        
+        {
+            "title": "Lietotājs", 
+            "slug": "lietotajs",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+         {
+            "title": "Aktivitātes datums un laiks", 
+            "slug": "aktivitates-datums-un-laiks",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        {
+            "title": "Darbība", 
+            "slug": "darbiba",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+         {
+            "title": "Komentārs", 
+            "slug": "komentars",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+         {
+            "title": "Npieciešams uzsākt APL", 
+            "slug": "nepieciesams-uzsakts-apl",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        {
+            "title": "Npieciešams sagatavot lēmumu par veicamajām darbībām", 
+            "slug": "nepieciesams-lemums",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        }
+    ]
+}

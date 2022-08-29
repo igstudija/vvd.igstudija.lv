@@ -1,0 +1,56 @@
+{
+
+    "tabledef": 
+            {
+                "language": "lv",
+                "lengthChange": "false", 
+                "pageLength":"10",
+                "autoWidth": "false"
+            },
+
+    "columns": [
+         {
+            "title": "Vārds", 
+            "slug": "vards",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        {
+            "title": "Uzvārds", 
+            "slug": "uzvards",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        {
+            "title": "Amats", 
+            "slug": "amats",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        {
+            "title": "Iestāde/Organizācija", 
+            "slug": "organizacija",
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        {
+            "title": null, 
+            "slug": "darbibas",
+            "columnDefs": 
+                    {
+                        "className": "text-end",
+                        "width": "100px",
+                        "defaultContent": "<button class='btn btn-sm btn-success'><i class='fa-solid fa-pen-to-square'></i></button> <button class='btn btn-sm btn-danger'><i class='fa-solid fa-trash-can'></i></button>",
+                        "orderable": false
+                    }
+        }
+    ]
+}

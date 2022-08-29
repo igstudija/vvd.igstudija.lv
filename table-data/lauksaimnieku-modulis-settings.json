@@ -1,0 +1,82 @@
+{
+
+    "tabledef": 
+            {
+                "language": "lv",
+                "lengthChange": "false", 
+                "pageLength":"20",
+                "autoWidth": "false"
+            },
+
+    "columns": [
+        {
+            "title": "Npk", 
+            "slug": "npk",
+            
+            "columnDefs": 
+                    {
+                        "className": "text-center",
+                        "width": "30px"
+                    }
+        },
+        {
+            "title": "Rādītājs", 
+            "slug": "raditajs",
+          
+            "columnDefs": 
+                    {
+                        "className": "text-start"                          
+                    }
+        },
+        {
+            "title": "Vērtība", 
+            "slug": "vertiba",
+            "type":"btn-group",
+            "field_elements": 
+                    {
+                        "name": "atbilstiba"
+                    },
+            "options": 
+                    {
+                        "ja": {"name": "<i class='fa-solid fa-thumbs-up' data-bs-toggle='tooltip' data-bs-title='Atbilst'></i>", "id":"ja"},
+                        "ne": {"name":"<i class='fa-solid fa-thumbs-down' data-bs-toggle='tooltip' data-bs-title='Neatbilst'></i>", "id":"ne"},
+                        "na": {"name":"<i class='fa-solid fa-xmark' data-bs-toggle='tooltip' data-bs-title='Nattiecas'></i>", "id":"na"}
+                    },
+           
+            "columnDefs": 
+                    {
+                        "className": "text-center",                       
+                        "orderable": false
+                    }
+        },
+        {
+            "title": "Piezīmes", 
+            "slug": "piezimes",
+            "type":"textarea",
+            "field_elements": 
+                    {
+                        "name": "apraksts",
+                        "placeholder": "Ievadi piezīmes te..."
+                    },
+            "columnDefs": 
+                    {
+                        "className": "text-center",
+                        "orderable": false,
+                        "width": "400px"
+                    }
+        },
+        
+        {
+            "title": null, 
+            "slug": "darbibas",
+            "columnDefs": 
+                    {
+                        "className": "text-end",
+                        "width": "50px",
+                        "orderable": false
+                    }
+        }
+    ]
+}
+
+

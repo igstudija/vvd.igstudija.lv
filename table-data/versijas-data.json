@@ -1,0 +1,18 @@
+{
+    "data": [
+        {                  
+            "pievienoja": "Liena Kadaga"   ,
+            "datums-un-laiks":"12.12.2022 11:54",
+            "komentars":"Komentārs",
+            "datne":"<a href='#'>datnes_nosaukums.pdf</a>"
+            
+        },
+         {                  
+            "pievienoja": "Alfrēds Kalniņš"   ,
+            "datums-un-laiks":"11.12.2022 12:33",
+            "komentars":"Komentārs",
+            "datne":"<a href='#'>datnes_nosaukums.pdf</a>"
+            
+        }
+    ]
+}
