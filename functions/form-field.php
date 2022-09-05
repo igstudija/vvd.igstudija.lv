@@ -54,6 +54,10 @@ function form_field($field_type,$field_elements=NULL,$options=NULL ){
     if (array_key_exists('disabled',$field_elements)) { $field_disabled = $field_elements['disabled'];}else {$field_disabled = NULL;}
     }else {$field_disabled = NULL;}
     
+     if (is_array($field_elements)){
+    if (array_key_exists('checked',$field_elements)) { $field_checked = $field_elements['checked'];}else {$field_checked = NULL;}
+    }else {$field_checked = NULL;}
+    
     
    
   /*   

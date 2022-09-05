@@ -20,9 +20,12 @@
 
     .accordion-body {
         h3 {
-            font-size: 14px;
-            text-transform: uppercase;
-            margin-top:15px;
+        font-size: 14px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+           // text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;
 
 
 
@@ -42,25 +45,30 @@
 .accordion-flush {
     border-radius: 7px;
     .accordion-item:first-child {
-    border-radius: 7px 7px 0 0;
-    h2 {
-        button {
         border-radius: 7px 7px 0 0;
-    }
-    }
-    
-}
-  .accordion-item:last-child {
-    border-radius: 0px 0px 7px 7px;
-    h2 {
-        button {
-        border-radius: 0px 0px 7px 7px;
-        &[aria-expanded="true"] {
-            border-radius: 0px;
+        h2 {
+            button {
+                border-radius: 7px 7px 0 0;
+            }
         }
+
     }
+    .accordion-item:last-child {
+        border-radius: 0px 0px 7px 7px;
+        h2 {
+            button {
+                border-radius: 0px 0px 7px 7px ;
+                &[aria-expanded="true"] {
+                    border-radius: 0px ;
+                }
+                &[aria-expanded="false"] {
+                    border-radius: 0px 0px 7px 7px  ;
+                }
+            }
+        }
+
     }
     
-}
+    
 }
 

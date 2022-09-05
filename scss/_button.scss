@@ -11,5 +11,19 @@
 .btn-outline-dark {
     background: #fff;
    border:0;
+  
 }
+
+
+.btn-outline-success:hover {
+    background: $green;
+}
+
+.btn-outline-dark:hover {
+    background: #224418;
+}
+.btn-outline-danger:hover {
+     background: #C70606;
+}
+
 }

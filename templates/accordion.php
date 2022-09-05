@@ -8,7 +8,7 @@
           type="button" 
           data-bs-toggle="collapse" 
           data-bs-target="#id-<?php echo $accordion_item["section"]; ?>" 
-          aria-expanded="true" 
+          aria-expanded="false" 
           aria-controls="id-<?php echo $accordion_item["section"]; ?>"
           >
         <?php echo $accordion_item["title"]; ?>
@@ -18,7 +18,7 @@
         id="id-<?php echo $accordion_item["section"]; ?>" 
         class="accordion-collapse collapse <?php echo $accordion_item["show"]; ?>" 
         aria-labelledby="heading-<?php echo $accordion_item["section"]; ?>" 
-        data-bs-parent="#accordion-<?php echo $accordion; ?>"
+       <?php /* data-bs-parent="#accordion-<?php echo $accordion; ?>"*/?>
         >
       <div class="accordion-body">
         

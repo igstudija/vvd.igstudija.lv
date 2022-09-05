@@ -1,5 +1,5 @@
 {
-
+    "tools": "true",
     "form_field": [
         {
             "type": "text", 
@@ -64,7 +64,7 @@
                     {
                         "label": "Nosaukums", 
                         "disabled": "disabled",
-                "value": "EKO OSTA, SIA"
+                        "value": "EKO OSTA, SIA"
                     }
         },
 
@@ -75,7 +75,7 @@
                     {
                         "label": "Kontaktpersona", 
                         "disabled": "disabled",
-                "value": "Jānis Bērziņš"
+                        "value": "Jānis Bērziņš"
                     }
         },
 
@@ -126,8 +126,8 @@
                         "value": "Atkritumu savākšanas, pārvadāšanas, pārkraušanas, šķirošanas, uzglabāšanas atļauja"
                     }
         },
-        
-         {
+
+        {
             "type": "date", 
             "col": "col-md-2",
             "field_elements": 
@@ -137,7 +137,7 @@
                     }
         },
 
-{
+        {
             "type": "date", 
             "col": "col-md-2",
             "field_elements": 
@@ -159,11 +159,29 @@
 
         {
             "type": "text", 
-            "col": "col-md-3",
+            "col": "col-auto",
             "field_elements": 
                     {
-                        "value": "Atkritumu pārkraušanai un uzglabāšanai",
-                        "disabled":"disabled"
+                        "value": "<i class='fa-solid fa-check'></i> Atkritumu pārkraušanai un uzglabāšanai",
+                        "disabled": "disabled"
+                    }
+        },
+        {
+            "type": "text", 
+            "col": "col-auto",
+            "field_elements": 
+                    {
+                        "value": "<i class='fa-solid fa-check'></i> Atkritumu pārvadāšanai",
+                        "disabled": "disabled"
+                    }
+        },
+        {
+            "type": "text", 
+            "col": "col-auto",
+            "field_elements": 
+                    {
+                        "value": "<i class='fa-solid fa-check'></i> Atkritumu pārkraušanai un uzglabāšanai",
+                        "disabled": "disabled"
                     }
         },
         {
@@ -171,11 +189,11 @@
             "col": "col-md-12",
             "field_elements": 
                     {
-                        "value": "(Atzīme par reģistrāciju atkritumu pārvadājumu uzskaites sistēmā)",
-                        "disabled":"disabled"
+                        "value": "<i class='fa-solid fa-tag'></i> Atzīme par reģistrāciju atkritumu pārvadājumu uzskaites sistēmā",
+                        "disabled": "disabled"
                     }
         },
-        
+
         {
             "type": "subtitle", 
             "col": "col-12",
@@ -185,15 +203,15 @@
                         "title": "Finanšu nodrošinājums"
                     }
         },
-        
-         {
+
+        {
             "type": "datalist-group", 
             "col": "col-md-6",
             "field_elements": 
                     {
                         "label": "Esošie nodrošinājumi",
                         "placeholder": "Izvēlies",
-                "button":"Pievienot jaunu"
+                        "button": "Pievienot jaunu"
                     },
             "options": 
                     {
@@ -201,24 +219,33 @@
                         "a": "100 000 EUR"
                     }
         },
-       
-       
-        
+
         {
             "type": "subtitle", 
             "col": "col-12",
             "field_elements": 
                     {
-                        "heading": "h3",
-                        "title": "Piezīmes"
+                        "heading": "h4",
+                        "title": "Plānotie pasākumi"
                     }
         },
+
         {
-            "type": "textarea", 
+            "type": "text", 
             "col": "col-md-12",
             "field_elements": 
                     {
-                        "label": "Piezīmes"
+                        "label": "Plānotie pasākumi nodarbināto drošības un veselības aizsardzībā",
+                        "disabled": "disabled"
+                    }
+        },
+        {
+            "type": "text", 
+            "col": "col-md-12",
+            "field_elements": 
+                    {
+                        "label": "Darbinieku kvalifikācija un tās paaugstināšanas pasākumi",
+                        "disabled": "disabled"
                     }
         }
 
@@ -249,22 +276,23 @@
             "order": "01"
         },
         {
+            "title": "Pārkraušana",
+            "section": "atkritumu-parkrausana",
+            "collapsed": "collapsed",
+            "show": "",
+            "order": "01"
+        },
+        {
             "title": "Pārvadāšana",
             "section": "atkritumu-parvadasana",
             "collapsed": "collapsed",
             "show": "",
             "order": "01"
         },
-        {
-            "title": "Slēgtas vai rekultivētas atkritumu izgāztuves atrakšana un tajā esošo atkritumu pāršķirošana",
-            "section": "atkritumu-slegtas-atraksana",
-            "collapsed": "collapsed",
-            "show": "",
-            "order": "01"
-        },
+
         {
             "title": "Dokumenti",
-            "section": "atkritumu-dokumenti",
+            "section": "dokumenti",
             "collapsed": "collapsed",
             "show": "",
             "order": "01"

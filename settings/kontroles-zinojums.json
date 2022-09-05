@@ -1,5 +1,5 @@
 {
-
+ "tools": "true",
     "form_field": [
         {
             "type": "text", 
@@ -241,7 +241,7 @@
         },
         {
             "title": "Dokumenti",
-            "section": "kontrole-dokumenti",
+            "section": "dokumenti",
             "collapsed": "collapsed",
             "show": "",
             "order": "01"

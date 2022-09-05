@@ -7,6 +7,27 @@ $(document).ready(function(){
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
+
+tinymce.init({
+    selector:'textarea.tiny-mce',
+    plugins : "autoresize",
+    menubar:false
+});
+
+
+$(function(){
+    $(".wmd-view-topscroll").scroll(function(){
+        $(".tabulator-tableholder")
+            .scrollLeft($(".wmd-view-topscroll").scrollLeft());
+    });
+    $(".tabulator-tableholder").scroll(function(){
+        $(".wmd-view-topscroll")
+            .scrollLeft($(".tabulator-tableholder").scrollLeft());
+    });
+});
+
+
+
 });
 
 
@@ -14,6 +35,10 @@ $('[data-toggle="modal"]').on("click", function(){
   $($(this).attr("data-target")).modal("show");
  
 });
+
+$("button[data-bs-toggle='collapase']").on('shown.bs.collapse', function () {
+       $(window).trigger('resize');
+   });
 
 
 $( '#basic-usage' ).select2( {

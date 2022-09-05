@@ -22,11 +22,11 @@
             border-color:$green;
         }
 
-        
+
 
     }
-    
-   
+
+
 
     >textarea.form-control {
         line-height: 20px;
@@ -49,12 +49,29 @@
 
 
 
+
             &:focus {
                 border-width:2px;
                 border-color:$green;
             }
 
         }
+
+
+
+
+
+        input.datalist {
+            position: relative;
+    background-image: url(/fontawesome/svgs/solid/list.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 99%;
+        }
+
+
+
+
     }
 
     label {
@@ -65,7 +82,7 @@
         font-size: 12px;
         position: absolute;
         top: 0;
-        z-index: 999;
+        z-index: 99;
         border-radius: 3px;
 
     }
@@ -73,11 +90,11 @@
     &.disabled {
         padding:0;
         label {
-        margin-left: 0px;
-         padding: 0px;
-         position: relative;
-    }
-    
+            margin-left: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
     }
 
 
@@ -94,6 +111,8 @@ table.dataTable  {
     }
 }
 
-
+.form-check {
+    //padding-top: 25px;
+}
 
 

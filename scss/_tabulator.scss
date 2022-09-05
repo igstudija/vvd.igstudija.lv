@@ -1,0 +1,30 @@
+
+
+
+
+///////////////////////////////////////////////////////////
+
+.tabulator {
+    border:0;
+    overflow: visible;
+    
+    .tabulator-header {
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+
+
+.tabulator-footer {
+    .tabulator-calcs-holder {
+    width: calc(100%);
+    overflow: hidden;
+}
+}
+
+
+
+}
+
+
+

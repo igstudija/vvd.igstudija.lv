@@ -8299,6 +8299,7 @@ textarea.form-control-lg {
 .menu {
   background: #fff;
   position: fixed;
+  z-index: 999;
   left: 15px;
   top: 15px;
   bottom: 15px;
@@ -8321,7 +8322,8 @@ textarea.form-control-lg {
     padding: 0;
     margin: 0; }
     .menu ul li {
-      display: block; }
+      display: block;
+      position: relative; }
       .menu ul li a {
         display: block;
         padding: 10px;
@@ -8337,6 +8339,29 @@ textarea.form-control-lg {
           top: 50%;
           transform: translateY(-50%);
           font-size: 20px; }
+      .menu ul li:hover {
+        background: #6e8a65; }
+        .menu ul li:hover a {
+          color: #fff; }
+      .menu ul li ul.submenu {
+        display: none;
+        position: fixed;
+        left: 230px;
+        top: 15px;
+        bottom: 15px;
+        z-index: 9999; }
+      .menu ul li:hover ul.submenu {
+        display: block;
+        background: #6e8a65;
+        overflow: auto;
+        padding: 15px;
+        border-radius: 0 7px 7px 0;
+        width: 300px; }
+        .menu ul li:hover ul.submenu li a {
+          text-transform: none;
+          padding-left: 10px;
+          height: auto;
+          color: #fff; }
   .menu .collapse-menu {
     position: absolute;
     bottom: 20px;
@@ -8356,8 +8381,10 @@ textarea.form-control-lg {
     width: 40px; }
     .menu-collapsed .menu .logo a {
       border: 0; }
-  .menu-collapsed .menu ul li a {
+  .menu-collapsed .menu > ul > li > a {
     font-size: 0; }
+  .menu-collapsed .menu > ul > li ul.submenu {
+    left: 70px; }
   .menu-collapsed .menu .collapse-menu {
     font-size: 0; }
     .menu-collapsed .menu .collapse-menu i {
@@ -8375,10 +8402,20 @@ textarea.form-control-lg {
   background: #fff;
   border: 0; }
 
+.tools .btn-outline-success:hover {
+  background: #4A773C; }
+
+.tools .btn-outline-dark:hover {
+  background: #224418; }
+
+.tools .btn-outline-danger:hover {
+  background: #C70606; }
+
 html {
   margin: 0;
   padding: 0;
-  background: #CDD9C9; }
+  background: #CDD9C9;
+  height: 100%; }
 
 body {
   padding-left: 265px;
@@ -8391,6 +8428,18 @@ body {
   height: 100%; }
   body.menu-collapsed {
     padding-left: 90px; }
+
+.wrapper {
+  min-height: 100%;
+  padding-bottom: 100px; }
+
+.footer {
+  height: 70px;
+  margin-top: -70px;
+  background: #dcead7;
+  border-radius: 7px;
+  padding: 15px;
+  text-align: center; }
 
 .header {
   background: #fff;
@@ -8407,6 +8456,31 @@ body {
   z-index: 9999;
   bottom: 15px;
   right: 15px; }
+
+.palidziba {
+  z-index: 9999; }
+  .palidziba .modal-dialog {
+    margin-right: unset;
+    width: 800px;
+    height: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .palidziba .modal-dialog .modal-content {
+      height: 100%;
+      overflow: auto;
+      border: 0;
+      border-radius: 0; }
+  .palidziba h2, .palidziba .h2, .palidziba h3, .palidziba .h3 {
+    font-weight: normal; }
+  .palidziba h2, .palidziba .h2 {
+    font-size: 20px; }
+  .palidziba h3, .palidziba .h3 {
+    font-size: 16px; }
+
+.modal.fade.palidziba:not(.in).right .modal-dialog {
+  -webkit-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0); }
 
 .accordion-button {
   padding-top: 7px;
@@ -8426,8 +8500,10 @@ body {
   border-top: 0; }
   .accordion-item .accordion-body h3, .accordion-item .accordion-body .h3 {
     font-size: 14px;
-    text-transform: uppercase;
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc; }
   .accordion-item .accordion-body .accordion {
     border: 1px solid #dee2e6; }
 
@@ -8443,10 +8519,14 @@ body {
       border-radius: 0px 0px 7px 7px; }
       .accordion-flush .accordion-item:last-child h2 button[aria-expanded="true"], .accordion-flush .accordion-item:last-child .h2 button[aria-expanded="true"] {
         border-radius: 0px; }
+      .accordion-flush .accordion-item:last-child h2 button[aria-expanded="false"], .accordion-flush .accordion-item:last-child .h2 button[aria-expanded="false"] {
+        border-radius: 0px 0px 7px 7px; }
 
-.modal .modal-title {
-  text-transform: uppercase;
-  font-weight: normal; }
+.modal {
+  z-index: 999999999999; }
+  .modal .modal-title {
+    text-transform: uppercase;
+    font-weight: normal; }
 
 .dataTable td {
   font-size: 14px; }
@@ -8542,6 +8622,12 @@ body {
       .form-element .input-group > .form-select:focus {
         border-width: 2px;
         border-color: #4A773C; }
+    .form-element .input-group input.datalist {
+      position: relative;
+      background-image: url(/fontawesome/svgs/solid/list.svg);
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+      background-position: 99%; }
   .form-element label {
     margin-left: 12px;
     background: #fff;
@@ -8550,7 +8636,7 @@ body {
     font-size: 12px;
     position: absolute;
     top: 0;
-    z-index: 999;
+    z-index: 99;
     border-radius: 3px; }
   .form-element.disabled {
     padding: 0; }
@@ -8579,7 +8665,6 @@ table.dataTable .form-element {
   font-size: 14px;
   margin-top: 15px;
   margin-bottom: 5px;
-  text-transform: uppercase;
   font-weight: bold;
   border-bottom: 1px solid #ccc; }
 
@@ -8587,7 +8672,6 @@ table.dataTable .form-element {
   font-size: 12px;
   margin-top: 15px;
   margin-bottom: 5px;
-  text-transform: uppercase;
   font-weight: bold;
   border-bottom: 1px solid #ccc; }
 
@@ -8597,6 +8681,22 @@ table.dataTable .form-element {
     text-transform: uppercase;
     font-weight: normal;
     font-size: 16px; }
+
+.tabulator {
+  border: 0;
+  overflow: visible; }
+  .tabulator .tabulator-header {
+    position: sticky;
+    top: 0;
+    z-index: 999999; }
+  .tabulator .tabulator-footer .tabulator-calcs-holder {
+    width: calc(100%);
+    overflow: hidden; }
+
+.bc h1, .bc .h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 15px; }
 
 /*!
  * Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com
