@@ -1,6 +1,8 @@
 new Tabulator("#datir-table", {
-    //layout: "fitColumns",
+
    // renderHorizontal:"virtual",
+   resizableRows:true,
+    layout: "fitDataStretch",
     pagination:"local",
     paginationSize:10,
     paginationSizeSelector:[5, 10, 20, 100],
@@ -14,20 +16,24 @@ new Tabulator("#datir-table", {
 
         {
             "title": "Atkritumu veids", 
-            "field": "a"},
+            "field": "a", 
+            frozen:true
+        },
         {
             "title": "Komersants, kurš pieņēma atkritumus no Savācēja", 
             "field": "b",
-           // headerFilter:true
+            width: 300
         },
         {
-            "title": "Pārstrādātais/reģenerētais apjoms (t)", 
+            "title": "Pārstrādātais / reģenerētais apjoms (t)", 
             "field": "c",
-            bottomCalc:"sum"
+            bottomCalc:"sum", 
+            width: 150, 
+            hozAlign:"right"
         },
         {
-            "title": "Gala pārstrādātājs/reģenerētājs", 
-            "field": "d"},
+            "title": "Gala pārstrādātājs / reģenerētājs", 
+            "field": "d", width: 300},
         {
             "title": "Reģions", 
             "field": "e"},
@@ -40,14 +46,14 @@ new Tabulator("#datir-table", {
         {
             "title": "Apsaimniekotāja līdzfinansējums (euro) par pārstrādāto/reģenerēto apjomu", 
             "field": "h",
-            bottomCalc:"sum"
+            bottomCalc:"sum", width: 200
         },
         {
             "title": "Apsaimniekotāja līdzfinansējuma par pārstrādāto/reģenerēto apjomu saņēmējs – komersanta nosaukums", 
-            "field": "i"},
+            "field": "i", width: 300},
         {
             "title": "Starpnieks", 
-            "field": "j"},
+            "field": "j", width: 300},
          {
             title: "Lasīšanai",
             field: "lasisanai",
@@ -77,7 +83,7 @@ new Tabulator("#datir-table", {
             "g":"123",
             "h":"2000000",
             "i":"SIA Fintek",
-            "j":"SIA Starpniecības ABC",
+            "j":"SIA Starpniecības ABC Starpniecības ABC Starpniecības ABC",
             "k":"Jā"
         },
         {

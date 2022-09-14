@@ -1,6 +1,6 @@
 
 new Tabulator("#kokapstrade-modulis-table", {
-
+resizableRows:true,
     layout: "fitColumns",
     //layoutColumnsOnNewData:true,
     resizableRows: true,

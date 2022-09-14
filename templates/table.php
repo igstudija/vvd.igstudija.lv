@@ -1,5 +1,6 @@
-<?php $t = NULL;
-$t=$_GET['t'];
+<?php 
+$t = NULL;
+$t=isset($_GET['t']);
 
 if ($t!=1){?>
 

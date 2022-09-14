@@ -1,16 +1,26 @@
 
 new Tabulator("#atkartoti-lietojamais-iepakojums-table", {
-    layout: "fitData",
+    resizableRows:true,
+    layout: "fitColumns",
+    pagination:"local",
+    paginationSize:10,
+    paginationSizeSelector:[5, 10, 20, 100],
+    movableColumns:true,
+    paginationCounter:"rows",
+    maxHeight:"100%",
     "columns": [
         {
             "title": "Atkritumu veids",
-            "field": "a"},
+            "field": "a", 
+            frozen:true
+        },
         {
             title: "Tirgū pirmo reizi kopā ar preci laistais iepakojums",
             "columns": [
                 {
                     "title": "Viss (kg)",
-                    "field": "bx"
+                    "field": "bx",
+            bottomCalc:"sum"
                 },
                 {
                     "title": "Viss (vienības)",
@@ -61,6 +71,31 @@ new Tabulator("#atkartoti-lietojamais-iepakojums-table", {
     ],
 
     "data": [
-
+        {
+             "a":"Pudeles",
+            "bx":"1000",
+            "ba":"100",
+            "bc":"500",
+            "bb":"30",
+            "xx":"40000",
+            "zz":"100000",
+            "b":"2000000",
+            "c":"234",
+            "d":"1776544",
+            "e":"23456"
+        },
+         {
+             "a":"Pudeles",
+            "bx":"1000",
+            "ba":"100",
+            "bc":"500",
+            "bb":"30",
+            "xx":"40000",
+            "zz":"100000",
+            "b":"2000000",
+            "c":"234",
+            "d":"1776544",
+            "e":"23456"
+        }
     ]
 });

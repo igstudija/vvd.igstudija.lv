@@ -8431,7 +8431,7 @@ body {
 
 .wrapper {
   min-height: 100%;
-  padding-bottom: 100px; }
+  padding-bottom: 85px; }
 
 .footer {
   height: 70px;
@@ -8530,6 +8530,16 @@ body {
 
 .dataTable td {
   font-size: 14px; }
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title, .tabulator-row .tabulator-cell {
+  white-space: normal; }
+
+.tabulator-row.tabulator-selected {
+  background-color: #cdd9c9; }
+
+.tabulator-row.tabulator-selected:hover {
+  background-color: #b4cdac;
+  cursor: pointer; }
 
 .tab-list {
   list-style: none;
