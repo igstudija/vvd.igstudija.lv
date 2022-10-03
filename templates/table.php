@@ -2,8 +2,16 @@
 $t = NULL;
 $t=isset($_GET['t']);
 
+
 if ($t!=1){?>
 
+<?php if ($hide_tools!=1){?>
+<div class="row">
+    <div class="col text-end pb-3">
+        <button id="download-xlsx" class="btn btn-sm btn-primary">Lejupielādēt XLSX</button>
+    </div>
+</div>
+<?php } ?>
 
 <div id="<?php echo $table_id; ?>-table"></div>
 

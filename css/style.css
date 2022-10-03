@@ -8391,6 +8391,9 @@ textarea.form-control-lg {
       transform: rotate(180deg);
       margin-right: 0; }
 
+.alert {
+  border: 0; }
+
 .tools .btn-outline-primary,
 .tools .btn-outline-secondary,
 .tools .btn-outline-success,
@@ -8405,7 +8408,7 @@ textarea.form-control-lg {
 .tools .btn-outline-success:hover {
   background: #4A773C; }
 
-.tools .btn-outline-dark:hover {
+.tools .btn-outline-dark:hover, .tools .btn-outline-dark:active, .tools .btn-outline-dark:focus {
   background: #224418; }
 
 .tools .btn-outline-danger:hover {
@@ -8454,8 +8457,9 @@ body {
 .template-switch {
   position: fixed;
   z-index: 9999;
-  bottom: 15px;
-  right: 15px; }
+  bottom: 0;
+  right: 0px;
+  border-radius: 5px 0 0 0px; }
 
 .palidziba {
   z-index: 9999; }
@@ -8488,6 +8492,18 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px; }
+  .accordion-button span.comments, .accordion-button span.status {
+    position: absolute; }
+  .accordion-button span.comments {
+    right: 100px;
+    color: blue; }
+    .accordion-button span.comments i {
+      color: blue;
+      margin-right: 2px; }
+  .accordion-button span.status {
+    right: 60px; }
+    .accordion-button span.status i {
+      color: green; }
 
 .accordion-button:not(.collapsed) {
   color: #4A773C;
@@ -8530,16 +8546,6 @@ body {
 
 .dataTable td {
   font-size: 14px; }
-
-.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title, .tabulator-row .tabulator-cell {
-  white-space: normal; }
-
-.tabulator-row.tabulator-selected {
-  background-color: #cdd9c9; }
-
-.tabulator-row.tabulator-selected:hover {
-  background-color: #b4cdac;
-  cursor: pointer; }
 
 .tab-list {
   list-style: none;
@@ -8632,12 +8638,12 @@ body {
       .form-element .input-group > .form-select:focus {
         border-width: 2px;
         border-color: #4A773C; }
-    .form-element .input-group input.datalist {
-      position: relative;
-      background-image: url(/fontawesome/svgs/solid/list.svg);
-      background-size: 15px 15px;
-      background-repeat: no-repeat;
-      background-position: 99%; }
+  .form-element input.datalist {
+    position: relative;
+    background-image: url(/fontawesome/svgs/solid/list.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px); }
   .form-element label {
     margin-left: 12px;
     background: #fff;
@@ -8702,6 +8708,50 @@ table.dataTable .form-element {
   .tabulator .tabulator-footer .tabulator-calcs-holder {
     width: calc(100%);
     overflow: hidden; }
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title, .tabulator-row .tabulator-cell {
+  white-space: normal; }
+
+.tabulator-row.tabulator-selected {
+  background-color: #cdd9c9; }
+
+.tabulator-row.tabulator-selected:hover {
+  background-color: #b4cdac;
+  cursor: pointer; }
+
+.tabulator .tabulator-header .tabulator-col .tabulator-header-filter {
+  margin-top: auto; }
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content {
+  display: flex;
+  flex-direction: column; }
+
+.widget .tabulator .tabulator-header .tabulator-col {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  border-right: 0px solid #aaa;
+  background: #fff;
+  text-align: left;
+  vertical-align: bottom;
+  overflow: hidden; }
+
+.widget .tabulator-row.tabulator-row-even {
+  background-color: #fff; }
+
+.widget .tabulator-row .tabulator-cell {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 4px;
+  border-right: 0px solid #aaa;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.widget .tabulator-row.tabulator-selectable:hover {
+  background-color: #fff; }
 
 .bc h1, .bc .h1 {
   font-size: 20px;

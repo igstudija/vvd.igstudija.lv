@@ -15,7 +15,7 @@
 
 <h3>Ja tiek veikts komercpārvadājums ar autotransporta līdzekli – dokuments, kas apliecina pārvadātāja pielaidi komercpārvadājumiem, numurs, derīguma termiņš un institūcija, kas to izdevusi</h3>
 <?php form_field('textarea',array('class'=>'tiny-mce','value'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia pellentesque sem a rutrum. Sed finibus arcu nisl, non faucibus ipsum egestas nec. Pellentesque ac tristique est, ut venenatis felis. Quisque gravida pellentesque arcu, sit amet tincidunt dui posuere eget. Maecenas vitae viverra elit. Morbi dolor odio, rutrum a aliquam ut, egestas a ex. Nunc in tellus at justo sagittis iaculis. Nam nec lectus dignissim, rutrum erat accumsan, varius justo. Vestibulum consectetur ultrices turpis.'));?>
-<h3>Ja atļauja nepieciešama bīstamo atkritumu pārvadāšanai</h3>
+<h3>Ja atļauja nepieciešama bīstamo atkritumu pārvadāšanai - dokumenti, kas apliecina pārvadātāja pielaidi komercpārvadājumiem, numurs, derīguma termiņš un institūcija, kas to izdevusi</h3>
 <?php form_field('textarea',array('class'=>'tiny-mce','value'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia pellentesque sem a rutrum. Sed finibus arcu nisl, non faucibus ipsum egestas nec. '));?>
 
 

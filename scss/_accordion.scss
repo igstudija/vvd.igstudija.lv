@@ -4,6 +4,29 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
+    
+    
+    
+     span.comments, span.status {
+                    position: absolute;
+                }
+                
+                span.comments {
+                    right:100px;
+                     color:blue;
+                    i {
+                        color:blue;
+                        margin-right: 2px;
+                    }
+                }
+                span.status {
+                    right:60px;
+                    i {
+                        color:green;
+                    }
+                }
+    
+    
 }
 
 .accordion-button:not(.collapsed) {
@@ -64,6 +87,10 @@
                 &[aria-expanded="false"] {
                     border-radius: 0px 0px 7px 7px  ;
                 }
+                
+                
+               
+                
             }
         }
 

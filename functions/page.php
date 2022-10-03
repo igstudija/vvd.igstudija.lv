@@ -55,6 +55,11 @@ function page() {
 <?php if($form_fields!=null) {?>
 <div class="card mt-3 mb-3">
     <div class="card-body pt-1">
+        
+        <?php if ($_GET['s']=="k"){?>
+        <?php form_field('datalist-group',  array('label'=>'Persona par kuru iesniedz','placeholder'=>'Izvēlies','button'=>'Pievienot','id'=>'abcd',"options"=>array("SIA EKO OSTA","Jānis Bērziņš"))); ?>
+        <hr>
+        <?php } ?>
 
         <?php form($p); ?>
 
@@ -62,7 +67,10 @@ function page() {
 </div>
 <?php } ?>
 
-<?php if($page!= NULL) { include("pages/".$p.".php");} ?>
+<?php 
+
+
+if($page!= NULL) { include("pages/".$p.".php");} ?>
 
 <?php if($accordions!=null) { accordion($p);} ?>
 

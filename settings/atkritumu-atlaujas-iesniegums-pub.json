@@ -52,7 +52,7 @@
             "col": "col-md-3",
             "field_elements": 
                     {
-                        "label": " Iesnieguma iesniegšana siemesls",
+                        "label": " Iesnieguma iesniegšanas iemesls",
                         "placeholder": "Izvēlies"
                     },
                    
@@ -83,7 +83,7 @@
             "col": "col-md-2",
             "field_elements": 
                     {
-                        "label": "Darbības uzsākšana", 
+                        "label": "Plānotā darbības uzsākšana", 
                         "placeholder": ""
                     }
         },

@@ -3,7 +3,7 @@
     "form_field": [
         {
             "type": "text", 
-            "col": "col-md-3",
+            "col": "col-md-2",
             "field_elements": 
                     {
                         "label": "DRN IP #ID",
@@ -13,17 +13,17 @@
         },
         {
             "type": "number", 
-            "col": "col-md-3",
+            "col": "col-md-2",
             "field_elements": 
                     {
                         "label": "Pārskata periods",
-                        "value": "01.01.2022 - 30.06.2022",
+                        "value": "01.01.2022 - 30.06.2022 <span class='badge rounded-pill text-bg-dark' data-bs-toggle='tooltip' data-bs-title='Samazinātās prasības'>s</span>",
                         "disabled":"disabled"
                     }
         },
         {
             "type": "number", 
-            "col": "col-md-3",
+            "col": "col-md-2",
             "field_elements": 
                     {
                         "label": "Pārskata sagatavošanas datums",
@@ -31,10 +31,20 @@
                         "disabled":"disabled"
                     }
         },
+         {
+            "type": "number", 
+            "col": "col-md-2",
+            "field_elements": 
+                    {
+                        "label": "Pārskata iesniegšanas datums",
+                        "value": "01.07.2022",
+                        "disabled":"disabled"
+                    }
+        },
         
         {
             "type": "select", 
-            "col": "col-md-3",
+            "col": "col-md-2",
             "field_elements": 
                     {
                         "label": "Statuss", 
@@ -43,9 +53,9 @@
             ,
             "options": 
                     {
-                        "m": "Melnraksts",
-                        "a": "Uzsākts", 
-                        "b": "Pabeigts"
+                        "m": "Statuss 1",
+                        "a": "Statuss 2", 
+                        "b": "Statuss N"
                     }
         },
         {

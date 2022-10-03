@@ -19,9 +19,10 @@
     background: $green;
 }
 
-.btn-outline-dark:hover {
+.btn-outline-dark:hover, .btn-outline-dark:active, .btn-outline-dark:focus  {
     background: #224418;
 }
+
 .btn-outline-danger:hover {
      background: #C70606;
 }

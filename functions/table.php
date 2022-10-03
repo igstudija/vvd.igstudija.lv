@@ -1,6 +1,6 @@
 <?php
 
-function table($table_id,$table_type=NULL) {
+function table($table_id,$table_type=NULL,$hide_tools=NULL) {
 
        /* $json = file_get_contents('table-data/' . $table_id . '.js');
         $items = json_decode($json, JSON_NUMERIC_CHECK);

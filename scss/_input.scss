@@ -61,18 +61,20 @@
 
 
 
-        input.datalist {
-            position: relative;
-    background-image: url(/fontawesome/svgs/solid/list.svg);
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position: 99%;
-        }
+       
 
 
 
 
     }
+    
+     input.datalist {
+            position: relative;
+    background-image: url(/fontawesome/svgs/solid/list.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
+        }
 
     label {
         margin-left: 12px;

@@ -1,4 +1,4 @@
-new Tabulator("#atkartoti-lietots-table", {
+new Tabulator("#sakums-parskati-table", {
     locale:"lv-lv",
     langs:{
         "lv-lv":{
@@ -37,57 +37,47 @@ new Tabulator("#atkartoti-lietots-table", {
     },
 columnHeaderVertAlign: "bottom",
     resizableRows: true,
-    pagination: "local",
-    paginationSize: 10,
-    paginationSizeSelector: [5, 10, 20, 100],
+   // pagination: "local",
+    //paginationSize: 10,
+   // paginationSizeSelector: [5, 10, 20, 100],
     movableColumns: true,
-    paginationCounter: "rows",
+   // paginationCounter: "rows",
     maxHeight: "100%",
     layout: "fitColumns",
-
     "columns": [
+        
         {
-            "title": "Tā komersanta nosaukums, reģistrācijas numurs un adrese, kas izsniedzis dokumentu", 
-            "field": "a"},
-        {
-            "title": "Dokumentā norādītais izlietotā iepakojuma materiāla veids", 
-            "field": "b"},
-        {
-            "title": "Apjoms, kas realizēts atkārtotai lietošanai", 
-            "field": "c"},
-        {
-            "title": "Laikposms, par kuru izsniegts apliecinājums", 
-            "field": "d"},
-        {
-            "title": "Dokumenta izsniegšanas datums", 
-            "field": "e"},
-
-        {
-            title: "Lasīšanai",
-            field: "lasisanai",
-            formatter: "rowSelection",
-            width: "100", 
-            hozAlign: "center",
-            headerSort: false,
-            cellClick: function (e, cell) {
-                cell.getRow().toggleSelect();
-            },
-            titleFormatter: function (cell, formatterParams, onRendered)
-            {
-                cell.getElement().style.textAlign = 'center';
-                return '' + cell.getValue()
+            "title": "Nosaukums",
+            "field": "nosaukums",
+             headerSort: false,
+            formatter: function (cell, formatterParams) {
+                var value = cell.getValue();
+                return "<a href='#'>" + value + "</a>";
+                
             }
+        },
+        {
+            "title": "Datums",
+            "field": "datums",
+            width: 100,
+             headerSort: false
+           
+            
         }
-    ],
 
+        
+    ],
     "data": [
         {
-            "a":"-",
-            "b":"-",
-            "c":"-",
-            "d":"-",
-            "e":"-"
             
+            "nosaukums": "Kaut kāds dokumenta nosaukums",
+            "datums":"12.12.2022"
+
+        },
+        {
+            
+            "nosaukums": "Cits dokuments",
+            "datums":"12.12.2022"
         }
     ]
 });

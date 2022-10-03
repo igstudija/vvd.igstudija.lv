@@ -1,5 +1,5 @@
-new Tabulator("#atkartoti-lietots-table", {
-    locale:"lv-lv",
+new Tabulator("#operatora-parstavji-table", {
+     locale:"lv-lv",
     langs:{
         "lv-lv":{
             
@@ -36,58 +36,53 @@ new Tabulator("#atkartoti-lietots-table", {
         }
     },
 columnHeaderVertAlign: "bottom",
-    resizableRows: true,
-    pagination: "local",
-    paginationSize: 10,
-    paginationSizeSelector: [5, 10, 20, 100],
-    movableColumns: true,
-    paginationCounter: "rows",
+   // resizableRows: true,
+   // pagination: "local",
+  //  paginationSize: 10,
+  //  paginationSizeSelector: [5, 10, 20, 100],
+ //   movableColumns: true,
+  //  paginationCounter: "rows",
     maxHeight: "100%",
+    columnDefaults:{
+        headerTooltip:true,
+      
+    },
     layout: "fitColumns",
-
     "columns": [
+         {
+            "title": "Vārds", 
+            "field": "vards"},
         {
-            "title": "Tā komersanta nosaukums, reģistrācijas numurs un adrese, kas izsniedzis dokumentu", 
-            "field": "a"},
+            "title": "Uzvārds", 
+            "field": "uzvards"},
         {
-            "title": "Dokumentā norādītais izlietotā iepakojuma materiāla veids", 
-            "field": "b"},
+            "title": "Amats", 
+            "field": "amats"},
         {
-            "title": "Apjoms, kas realizēts atkārtotai lietošanai", 
-            "field": "c"},
+            "title": "Pārstāvja tips", 
+            "field": "tips"},
         {
-            "title": "Laikposms, par kuru izsniegts apliecinājums", 
-            "field": "d"},
-        {
-            "title": "Dokumenta izsniegšanas datums", 
-            "field": "e"},
-
-        {
-            title: "Lasīšanai",
-            field: "lasisanai",
-            formatter: "rowSelection",
-            width: "100", 
-            hozAlign: "center",
-            headerSort: false,
-            cellClick: function (e, cell) {
-                cell.getRow().toggleSelect();
-            },
-            titleFormatter: function (cell, formatterParams, onRendered)
-            {
-                cell.getElement().style.textAlign = 'center';
-                return '' + cell.getValue()
+            "title": null, 
+            "field": "darbibas",
+              width:50,
+               hozAlign: "center",
+            formatter: function (cell) {
+                return '<button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>';
             }
         }
     ],
-
     "data": [
-        {
-            "a":"-",
-            "b":"-",
-            "c":"-",
-            "d":"-",
-            "e":"-"
-            
+        {                  
+            "vards": "Jānis",
+            "uzvards":"Bērziņš",
+            "amats": "Vecākais inženieris" ,
+             "tips": "Pārstāvis"    
+        },
+        {                  
+            "vards": "Anna ",
+            "uzvards":"Kalna",
+            "amats": "Direktors" ,
+             "tips": "Amatpersona"    
         }
     ]
 });

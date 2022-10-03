@@ -34,9 +34,9 @@
             ,
             "options": 
                     {
-                        "m": "Melnraksts",
-                        "a": "Uzsākts", 
-                        "b": "Pabeigts"
+                        "m": "Statuss A",
+                        "a": "Statuss B", 
+                        "b": "Statuss C"
                     }
         },
         {
@@ -44,7 +44,7 @@
             "col": "col-md-3",
             "field_elements": 
                     {
-                        "label": "Samaksāšanas datums", 
+                        "label": "Nodevas samaksāšanas datums", 
                         "placeholder": ""
                     }
         },
@@ -85,13 +85,13 @@
             "field_elements": 
                     {
                         "label": "Struktūrvienība",
-                        "placeholder": "Izvelies"
+                        "placeholder": "Izvēlies"
                     },
             "options": 
                     {
-                        "m": "Janis Bērziņš",
-                        "a": "Liene Alka", 
-                        "b": "Pēteris Meisters"
+                        "m": "Nosaukums 1",
+                        "a": "Nosaukums 2", 
+                        "b": "Nosaukums 3"
                     }
         },
 
@@ -305,7 +305,7 @@
             "order": "01"
         },
         {
-            "title": "Apmaksas informācija",
+            "title": "Nodevas apmaksas informācija",
             "section": "apmaksas-informacija",
             "collapsed": "collapsed",
             "show": "",

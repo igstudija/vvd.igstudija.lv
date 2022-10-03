@@ -12,12 +12,12 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum cursus nulla, quis pulvinar libero dignissim et. Nulla facilisi. Integer nisl mi, molestie a ipsum ut, interdum consequat nibh. Maecenas lobortis massa sit amet velit feugiat, eget posuere tortor scelerisque. Maecenas ornare lobortis ligula at dapibus. Aliquam nisl nisl, malesuada ac mattis ut, facilisis placerat turpis. Cras leo felis, facilisis eget viverra ac, hendrerit eu felis. Vivamus a erat ullamcorper, luctus mi sit amet, sollicitudin dolor. Suspendisse porta cursus nisl eu pretium. Praesent sit amet ipsum magna.</p>
         
         <h3>Palīdzības video</h3>
-        
+      <?php /*  
         <div class="ratio ratio-16x9">
-   <iframe  src="<?php /*https://www.youtube.com/embed/RSurSemStgM*/?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe  src="https://www.youtube.com/embed/RSurSemStgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-        
-       
+      */?>  
+         
         
         
       </div>

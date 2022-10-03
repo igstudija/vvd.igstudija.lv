@@ -1,41 +1,93 @@
 new Tabulator("#kopsavilkums-table", {
-    columnDefaults:{
-        headerTooltip:true,
-      
+    locale: "lv-lv",
+    langs: {
+        "lv-lv": {
+
+            "ajax": {
+                "loading": "Loading", //ajax loader text
+                "error": "Error", //ajax error text
+            },
+            "groups": {//copy for the auto generated item count in group header
+                "item": "item", //the singular  for item
+                "items": "items", //the plural for items
+            },
+            "pagination": {
+                "first": "Pirmā", //text for the first page button
+                "first_title": "Pirmā lapa", //tooltip text for the first page button
+                "last": "Pēdējā",
+                "last_title": "Last Page",
+                "prev": "Atpakaļ",
+                "prev_title": "Iepriekšējā lapa",
+                "next": "Tālāk",
+                "next_title": "Nākamā lapa",
+                "page_size": "Skaits lapā",
+                "all": "Visas",
+                "counter": {
+                    "showing": "Rāda",
+                    "of": "no",
+                    "rows": "",
+                    "pages": "lapas",
+                }
+            },
+            "headerFilters": {
+                "default": "atlasīt kolonnu...", //default header filter placeholder text
+
+            }
+        }
+    },
+columnHeaderVertAlign: "bottom",
+    resizableRows: true,
+    pagination: "local",
+    paginationSize: 10,
+    paginationSizeSelector: [5, 10, 20, 100],
+    movableColumns: true,
+    paginationCounter: "rows",
+    maxHeight: "100%",
+    columnDefaults: {
+        headerTooltip: true,
+
     },
     layout: "fitColumns",
     "columns": [
         {
             "title": "Iepakojuma un vienreiz lietojamo trauku materiāla veids",
-            "field": "a"},
+            "field": "a",
+            width: 300},
         {
             "title": "Radītais izlietotā iepakojuma un vienreiz lietojamo trauku daudzums",
-            "field": "a"},
+            "field": "b",
+            width: 300},
         {
             "title": "Latvijas Republikas teritorijā savāktais izlietotā iepakojuma un vienreiz lietojamo trauku daudzums pārskata gadā",
-            "field": "a"},
+            "field": "c",
+            width: 300},
         {
             "title": "Reģenerācijai/ pārstrādei sagatavotais izlietotā iepakojuma un vienreiz liet. trauku daudzums pārskata gadā",
-            "field": "a"},
+            "field": "d",
+            width: 300},
         {
             title: "Pārstrādāts/ Reģenerēts LR teritorijā",
             "columns": [
 
                 {
                     "title": "Materiālu pārstrāde",
-                    "field": "bx"
+                    "field": "e",
+                    width: 150
                 },
                 {
                     "title": "Cita veida pārstrāde",
-                    "field": "bx"
+                    "field": "f",
+                    width: 150
                 },
                 {
                     "title": "Citi reģenerācijas veidi",
-                    "field": "bx"
+                    "field": "g",
+                    width: 150
                 },
                 {
                     "title": "Sadedzināšana ar enerģijas atgūšanu",
-                    "field": "bx"
+                    "field": "h",
+                    width: 150
                 }
             ]},
         {
@@ -44,19 +96,23 @@ new Tabulator("#kopsavilkums-table", {
 
                 {
                     "title": "Materiālu pārstrāde",
-                    "field": "bx"
+                    "field": "i",
+                    width: 150
                 },
                 {
                     "title": "Cita veida pārstrāde",
-                    "field": "bx"
+                    "field": "j",
+                    width: 150
                 },
                 {
                     "title": "Citi reģenerācijas veidi",
-                    "field": "bx"
+                    "field": "k",
+                    width: 150
                 },
                 {
                     "title": "Sadedzināšana ar enerģijas atgūšanu",
-                    "field": "bx"
+                    "field": "l",
+                    width: 150
                 }
 
             ]},
@@ -66,32 +122,39 @@ new Tabulator("#kopsavilkums-table", {
 
                 {
                     "title": "Pārstrādāts (kg)",
-                    "field": "bx"
+                    "field": "m",
+                    width: 150
                 },
                 {
                     "title": "Pārstrādāts (%)",
-                    "field": "bx"
+                    "field": "n",
+                    width: 150
                 },
                 {
                     "title": "Reģenerēts (kg)",
-                    "field": "bx"
+                    "field": "o",
+                    width: 150
                 },
                 {
                     "title": "Reģenerēts (%)",
-                    "field": "bx"
+                    "field": "p",
+                    width: 150
                 },
                 {
                     "title": "Kopā (kg)",
-                    "field": "bx"
+                    "field": "r",
+                    width: 150
                 },
                 {
                     "title": "Kopā (%)",
-                    "field": "bx"
+                    "field": "s",
+                    width: 150
                 }]
         },
         {
             "title": "Kopējais eksportētais atkritumu daudzums (kg)",
-            "field": "bx"
+            "field": "t",
+            width: 150
         },
         {
             title: "Mērķa sasniegšanas novērtējums",
@@ -99,17 +162,44 @@ new Tabulator("#kopsavilkums-table", {
 
                 {
                     "title": "Reģenerācijai (t.sk.pārstrādei)",
-                    "field": "bx"
+                    "field": "u",
+                    width: 150
                 },
                 {
                     "title": "Pārstrādei",
-                    "field": "bx"
+                    "field": "v",
+                    width: 150
                 }
 
 
             ]}
     ],
     "data": [
+
+        {
+            "a": "-",
+            "b": "-",
+            "c": "-",
+            "d": "-",
+            "e": "-",
+            "f": "-",
+            "g": "-",
+            "h": "-",
+            "i": "-",
+            "j": "-",
+            "k": "-",
+            "l": "-",
+            "m": "-",
+            "n": "-",
+            "o": "-",
+            "p": "-",
+            "r": "-",
+            "s": "-",
+            "t": "-",
+            "u": "-",
+            "v": "-"
+
+        }
 
     ]
 });

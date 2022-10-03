@@ -10,8 +10,14 @@
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-print"></i> Drukāt</a></li>
     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-excel"></i> Eksportēt uz Excel</a></li>
+     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-signature"></i> Parakstīt</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-paper-plane"></i> Nosūtīt</a></li>
     <li><a class="dropdown-item" href="#">...</a></li>
   </ul>
 </div>
+     
+     <?php if ($_GET['s']=='p'   ){ ?>
+     
     <button class="btn btn-outline-danger ms-3 ms-auto"><i class="fa-solid fa-trash-can"></i> Dzēst</button>
+     <?php } ?>
 </div>

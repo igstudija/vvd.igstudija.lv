@@ -1,7 +1,4 @@
 
-
-
-
 <?php if (!$field_disabled){?>
 <div class="form-element  <?php if(!$field_label){ ?>pt-1<?php } ?>">
     <?php if($field_label){ ?><label for="<?php echo $field_id; ?>"><?php echo $field_label; ?></label><?php } ?>

@@ -11,37 +11,37 @@
 </div>
 
 <div class="row">
-    <div class="col-4">
+    <div class="col-6 mb-3">
 
         <div class="card widget">
             <h5 class="card-header"><i class="fa-solid fa-file-signature"></i> Iesniegumi</h5>
             <div class="card-body">
 
-                <?php table('sakums-iesniegumi','',1);?>
+                <?php table('sakums-iesniegumi-co','',1);?>
 
             </div>
         </div>
 
     </div>
     
-    <div class="col-4">
+    <div class="col-6 mb-3">
 
         <div class="card widget">
             <h5 class="card-header"><i class="fa-solid fa-award"></i> Atļaujas</h5>
             <div class="card-body">
 
-<?php table('sakums-atlaujas','',1);?>
+<?php table('sakums-atlaujas-co','',1);?>
             </div>
         </div>
 
     </div>
     
-    <div class="col-4">
+    <div class="col-6 mb-3">
 
         <div class="card widget">
             <h5 class="card-header"><i class="fa-solid fa-list-check"></i> Pārskati</h5>
             <div class="card-body">
-<?php table('sakums-parskati','',1);?>
+<?php table('sakums-parskati-co','',1);?>
             </div>
         </div>
 

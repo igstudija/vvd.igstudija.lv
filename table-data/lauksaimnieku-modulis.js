@@ -1,8 +1,56 @@
 
 new Tabulator("#lauksaimnieku-modulis-table", {
+     locale:"lv-lv",
+    langs:{
+        "lv-lv":{
+            
+            "ajax":{
+                "loading":"Loading", //ajax loader text
+                "error":"Error", //ajax error text
+            },
+            "groups":{ //copy for the auto generated item count in group header
+                "item":"item", //the singular  for item
+                "items":"items", //the plural for items
+            },
+            "pagination":{
+                "first":"Pirmā", //text for the first page button
+                "first_title":"Pirmā lapa", //tooltip text for the first page button
+                "last":"Pēdējā",
+                "last_title":"Last Page",
+                "prev":"Atpakaļ",
+                "prev_title":"Iepriekšējā lapa",
+                "next":"Tālāk",
+                "next_title":"Nākamā lapa",
+                 "page_size":"Skaits lapā",
+                  "all":"Visas",
+                "counter":{
+                    "showing": "Rāda",
+                    "of": "no",
+                    "rows": "",
+                    "pages": "lapas",
+                }
+            },
+            "headerFilters":{
+                "default":"atlasīt...", //default header filter placeholder text
+               
+            }
+        }
+    },
+columnHeaderVertAlign: "bottom",
+    resizableRows: true,
+   // pagination: "local",
+   // paginationSize: 10,
+   // paginationSizeSelector: [5, 10, 20, 100],
+   // movableColumns: true,
+   // paginationCounter: "rows",
+    maxHeight: "100%",
+    columnDefaults:{
+        headerTooltip:true,
+      
+    },
     layout: "fitColumns",
     //layoutColumnsOnNewData:true,
-    resizableRows:true,
+
     responsiveLayout:true,
     columnDefaults:{
         tooltip:true,
@@ -17,20 +65,32 @@ new Tabulator("#lauksaimnieku-modulis-table", {
         },
         {
             "title": "Rādītājs", 
-            "field": "raditajs"
+            "field": "raditajs",
+             headerFilter: "input",
         },
         {
-            "title": "Vērtība", 
+            "title": "Vērtība",
             "field": "vertiba",
-              width:100,
+            width: 100,
+            
             editor:"select", 
-            editorParams:{
-                values:[
+            headerFilter:"select", 
+            headerFilterParams:{
+              values:[
                     "Atbilst",
                     "Neatbilst", 
                     "Neattiecas"
-                ]}
-            
+                ]
+                },
+            editorParams: {
+               values:[
+                    "Atbilst",
+                    "Neatbilst", 
+                    "Neattiecas"
+                ]
+                
+                }
+
         },
         {
             "title": "Piezīmes", 
@@ -46,7 +106,7 @@ new Tabulator("#lauksaimnieku-modulis-table", {
                hozAlign: "center",
                headerSort: false,
             formatter: function (cell) {
-                return '<button class="btn btn-sm btn-success"><i class="fa-solid fa-pencil tone"></i></button>';
+                return '<button class="btn btn-sm btn-success"><i class="fa-solid fa-file tone"></i></button>';
             }
         }
     ], 

@@ -1,4 +1,4 @@
-<?php table('parslegt-uznemumu');?>
+<?php table('parslegt-uznemumu','',1);?>
 
 
 <?php /*

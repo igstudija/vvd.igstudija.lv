@@ -84,7 +84,25 @@
             "name": "Pārskati",
             "link": "#",
             "icon": "fa-solid fa-list-check",
-            "order": "01"
+            "order": "01",
+            "submenu": [
+                {
+                    "name": "RAS - IP pārskats",
+                    "link": "#"
+                },
+                {
+                    "name": "RAS - VKP pārskats",
+                    "link": "#"
+                },
+                {
+                    "name": "RAS - EEI pārskats",
+                    "link": "#"
+                },
+                {
+                    "name": "RAS - NTL pārskats",
+                    "link": "#"
+                }
+            ]
         },
         {
             "name": "Licences",
